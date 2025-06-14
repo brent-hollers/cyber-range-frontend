@@ -8,7 +8,7 @@ const awsmobile = {
         "userPoolId": "us-east-1_2nENcldG2",
         "userPoolWebClientId": "3j8h4ju8c69lp935hqqna1c9d8",
         "oauth": {
-            "domain": "https://us-east-12nencldg2.auth.us-east-1.amazoncognito.com",
+            "domain": "us-east-12nencldg2.auth.us-east-1.amazoncognito.com",
             "scope": [
                 "openid",
                 "email",
