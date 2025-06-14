@@ -1,0 +1,101 @@
+{
+  "auth": {
+    "cyberrange73f76010": {
+      "customAuth": false,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "imported"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_auth_cyberrange73f76010_allowUnauthenticatedIdentities": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_authRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_authRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_identityPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_identityPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_unauthRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_unauthRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    },
+    "AMPLIFY_auth_cyberrange73f76010_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "cyberrange73f76010"
+        }
+      ]
+    }
+  }
+}

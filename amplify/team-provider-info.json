@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cyberrange-dev-caa58-authRole",
+      "UnauthRoleArn": "arn:aws:iam::736424551703:role/amplify-cyberrange-dev-caa58-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::736424551703:role/amplify-cyberrange-dev-caa58-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cyberrange-dev-caa58-deployment",
+      "UnauthRoleName": "amplify-cyberrange-dev-caa58-unauthRole",
+      "StackName": "amplify-cyberrange-dev-caa58",
+      "StackId": "arn:aws:cloudformation:us-east-1:736424551703:stack/amplify-cyberrange-dev-caa58/2349bb40-493e-11f0-b95e-0e7feb9c4c67",
+      "AmplifyAppId": "d2t1ojb0q7ixvu"
+    },
+    "categories": {
+      "auth": {
+        "cyberrange73f76010": {
+          "userPoolId": "us-east-1_2nENcldG2",
+          "userPoolName": "Cyber_Range_Users",
+          "webClientId": "3j8h4ju8c69lp935hqqna1c9d8",
+          "nativeClientId": "3j8h4ju8c69lp935hqqna1c9d8",
+          "identityPoolId": "us-east-1:cc8af897-c7ba-4f55-bfad-8ca1aea97082",
+          "identityPoolName": "cyber_range_pool",
+          "allowUnauthenticatedIdentities": true,
+          "authRoleArn": "arn:aws:iam::736424551703:role/service-role/cyber_range_users",
+          "authRoleName": "cyber_range_users",
+          "unauthRoleArn": "arn:aws:iam::736424551703:role/service-role/cyber_range_users_unauth",
+          "unauthRoleName": "cyber_range_users_unauth"
+        }
+      }
+    }
+  }
+}
