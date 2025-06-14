@@ -1,0 +1,16 @@
+const awsconfig = {
+  Auth: {
+    region: 'us-east-1',
+    userPoolId: 'us-east-1_2nENcldG2',
+    userPoolWebClientId: '3j8h4ju8c69lp935hqqna1c9d8',
+    oauth: {
+      domain: 'labs-auth.auth.us-east-1.amazoncognito.com',
+      scope: ['openid', 'email', 'profile'],
+      redirectSignIn: 'https://staging.d3pj4eqnytcy08.amplifyapp.com/',
+      redirectSignOut: 'https://staging.d3pj4eqnytcy08.amplifyapp.com/',
+      responseType: 'code'
+    }
+  }
+};
+
+export default awsconfig;
