@@ -15,7 +15,7 @@ const [userName, setUserName] = useState('');
       .then(user => {
         // Safely access attributes
         console.log('Logged-in user:', user);
-        const name = user?.attributes?.name || user?.attributes?.email || user?.username;
+        const name = user.attributes.name || user.attributes.email || user.username;
         setUserName(name);
       })
       .catch(err => console.log('Error fetching user', err));
