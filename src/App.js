@@ -11,8 +11,11 @@ function App() {
 
   useEffect(() => {
     Auth.currentAuthenticatedUser()
-      .then(user => setUser(user))
-      .catch(() => setUser(null));
+    .then(user => {
+      const name = user.attributes.name || user.attributes.email || user.username;
+      setUser(name);
+    })
+    .catch(err => console.log(err));
   }, []);
 
   const signIn = () => Auth.federatedSignIn();
@@ -36,7 +39,7 @@ function App() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h2>Welcome, {user.username}</h2>
+      <h2>Welcome, {user}</h2>
       {!instanceLaunched ? (
         <button onClick={startSession}>Start Session</button>
       ) : (
