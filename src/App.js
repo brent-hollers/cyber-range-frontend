@@ -8,15 +8,19 @@ function App() {
   const [user, setUser] = useState(null);
   const [instanceLaunched, setInstanceLaunched] = useState(false);
   const [iframeUrl, setIframeUrl] = useState("");
+const [userName, setUserName] = useState('');
 
   useEffect(() => {
     Auth.currentAuthenticatedUser()
-    .then(user => {
-      const name = user.attributes.name || user.attributes.email || user.username;
-      setUser(name);
-    })
-    .catch(err => console.log(err));
+      .then(user => {
+        // Safely access attributes
+        console.log('Logged-in user:', user);
+        const name = user?.attributes?.name || user?.attributes?.email || user?.username;
+        setUserName(name);
+      })
+      .catch(err => console.log('Error fetching user', err));
   }, []);
+
 
   const signIn = () => Auth.federatedSignIn();
   const signOut = () => Auth.signOut().then(() => setUser(null));
@@ -39,7 +43,7 @@ function App() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h2>Welcome, {user}</h2>
+      <h2>Welcome, {userName}</h2>
       {!instanceLaunched ? (
         <button onClick={startSession}>Start Session</button>
       ) : (
